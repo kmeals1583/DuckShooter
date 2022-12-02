@@ -376,7 +376,7 @@ while run:
             new_coords = True
             pygame.mixer.music.play()
             if mode == 0:
-                if time_past > best_freeplay or best_freeplay == 0:
+                if time_past <= best_freeplay or best_freeplay == 0:
                     best_freeplay = time_past
                     write_values = True
             if mode == 1:
